@@ -9,7 +9,7 @@ body {
     font-family: "Lato", Calibri, Arial, sans-serif;
     font-size: 14px;
     height: 100%;
-    background: url("../img/water.png") 0 0 repeat-x;
+    background: url("../img/wallpaper/swimming-pool-water-dt-1920x1080.png") 0 0 repeat-x;
     background-attachment: fixed;
 }
 
@@ -20,7 +20,10 @@ div {
 .page-wrapper {
     position: relative;
     margin: 0 auto;
-    background: #fff;
+  /*  background: #d2e2fd;*/
+    /*background: url("../img/main.png");*/
+    background-image: linear-gradient(to right top,
+    #eba8ff, #d6a9ff, #c1aafd, #adaaf8, #9baaf2, #91abf1, #87acf0, #7eadee, #77b0f3, #70b4f7, #67b7fb, #5dbbff);
     width: 1150px;
     min-height: 100%;
     box-shadow: 0 0 15px;
@@ -115,4 +118,113 @@ li {
 
 table {
     border-spacing: 3px;
+}
+
+.main-wrapper{
+    padding: 0px 25px 0px 25px;
+    background: white;
+    top: 500px;
+}
+
+.column{
+    float: left;
+    width: 400px;
+    padding: 55px 350px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    color: rgba(8 8 43);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    padding: 4px 10px;
+    margin-bottom: -13px;
+    margin-top: 7px;
+    margin-left: 0px;
+}
+
+/*.sign-in{
+    !*background-color: #5ccbf7;*!
+   !* background: url("../img/water.png");*!
+    !* background: url("../img/gradient.png");*!
+}*/
+/*.section-in{
+    background: url("../img/wallpaper/gradient2.png");
+   !* background: rgb(177,152,255);*!
+    !*background: linear-gradient(90deg, rgba(177,152,255,1) 0%, rgba(161,187,255,1) 10%, rgba(248,144,255,1) 25%, rgba(240,179,255,1) 50%,
+    rgba(248,144,255,1) 75%, rgba(161,187,255,1) 90%, rgba(177,152,255,1) 100%);*!
+    width: 475px;
+    height: 200px;
+    margin-left: -40px;
+    border-radius: 30px;
+    margin-top: -10px;
+    border: 3px solid;
+    border-color: rgba(8 8 43);
+}*/
+
+.form-text-required{
+    width: 400px;
+    height: 35px;
+    margin-left: 0px;
+    margin-top: 25px;
+    border-radius: 12px;
+    border: 2px solid;
+    border-color: rgba(8 8 43);
+    background: #f1f2e6;
+    text-indent: 13px;
+}
+
+
+.login-pass{
+   margin-top: -15px;
+}
+.form-submit{
+    margin-top: 15px;
+    margin-left: 0px;
+    height: 35px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12px;
+    background: #f1f2e6;
+    color: rgba(8 8 43);
+}
+
+
+.form-submit:hover{
+    background:#cacac8;
+}
+
+.form-registration{
+    margin-top: -35px;
+    margin-left: 15px;
+    height: 35px;
+    width: 150px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12px;
+    background: #f1f2e6;
+    color: rgba(8 8 43);
+}
+
+
+.form-registration:hover{
+    background: #cacac8;
+}
+
+
+.form-dont-pass-action{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12.5px;
+    color: rgba(8 8 43);
+}
+
+.form-dont-pass{
+    margin-top: -25px;
+    margin-left: 258px;
 }

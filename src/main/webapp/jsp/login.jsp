@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Московская Федерация Судей</title>
-    <link href="${pageContext.request.contextPath}/css/newLogin.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/css/styleLogin.css" rel="stylesheet" type="text/css">
 </head>
 <body class="html front not-logged-in no-sidebars page-not">
 <div class="page-wrapper">
@@ -21,13 +21,14 @@
                         <tbody>
                         <tr>
                             <td style="display: inline-block;padding: 5px"><img
-                                    src="${pageContext.request.contextPath}/img/logo.png" height="58px" width="58"></td>
+                                    src="${pageContext.request.contextPath}/img/logo/logo.png" height="58px" width="58">
+                            </td>
                             <td STYLE="display: inline-block; padding: 5px"><font
                                     style="font-size: 40px; font-family: Verdana; font-weight: bold; color: #f1f2e6;">МФС</font>
                             </td>
                             <td style="display: inline-block; padding: 5px 0;"><font
-                                    style="font-size:14px; font-family: Verdana; color:#f1f2e6;">Московская федерация
-                                <br>судей по плаванию</font></td>
+                                    style="font-size:14px; font-family: Verdana; color:#f1f2e6;">Московская Федерация
+                                <br>Судей по плаванию</font></td>
                         </tr>
                         </tbody>
                     </table>
@@ -71,47 +72,43 @@
                 </ul>
             </div>
         </div>
-        <div class="login">
-            <div class="login-screen">
-                <div class="app-title">
-                    <h3>Клуб Спортивных Судей</h3>
-                </div>
-                <div class="login-form">
-                    <form id="main-form" method="get" action="login">
-                        <div class="control-group">
-                            <label class="login-field-icon fui-user" for="LoginSecondName">
-                                <input type="text" class="login-field" value="" placeholder="Фамилия" name="LoginSecondName"
-                                       id="LoginSecondName">
-                            </label>
-                        </div>
-                        <div class="control-group">
-                            <label class="login-field-icon fui-user" for="LoginName">
-                                <input type="text" class="login-field" value="" placeholder="Имя" name="LoginName"
-                                       id="LoginName">
-                            </label>
-                        </div>
+        <div class="main-wrapper">
+            <div id="main" class="clearfix">
+                <div id="content" class="column">
+                    <div class="section-in">
+                        <h1 class="title" id="page-title">Для того, чтобы получить логин<br> и пароль, требуется
+                            отравить заявку</h1>
+                        <form action="${pageContext.request.contextPath}/login" method="post" id="user-login"
+                              accept-charset="UTF-8">
+                            <div class="sign-in">
+                                <div class="login-email">
+                                    <label for="edit-email">
+                                        <input type="text" id="edit-email" name="email" value="" size="60"
+                                               maxlength="60"
+                                               placeholder="Введите свою почту" class="form-text-required">
+                                    </label>
+                                </div>
+                                <div class="login-pass">
+                                    <label for="edit-pass">
+                                        <input type="password" id="edit-pass" name="email" value="" size="60"
+                                               maxlength="60"
+                                               placeholder="Введите свой пароль" class="form-text-required">
+                                    </label>
+                                </div>
+                                <input type="submit"
+                                       id="edit-submit"
+                                       name="op" value="Войти"
+                                       class="form-submit">
 
-                        <div class="control-group">
-                            <label class="login-field-icon fui-lock" for="LoginPassword">
-                                <input type="password" class="login-field" value="" placeholder="Пароль" name="LoginPassword"
-                                       id="LoginPassword">
-                            </label>
-                        </div>
-                        <div class="app-title-error">
-                            <h4 id="error" style="color: red"></h4>
-                        </div>
-                        <input class="btn btn-primary btn-large btn-block" type="submit" value="Войти">
-                        <%--<a class="btn btn-primary btn-large btn-block" href="login">Войти</a>--%>
-                    </form>
-                </div>
-                <div class="login-form">
-
-                    <form method="post" action="login">
-                        <div class="control-group">
-                            <input class="btn btn-primary btn-large btn-block" type="submit" value="Зарегистрироваться">
-                            <%--<a class="login-link" href="login">Зарегистрироваться</a>--%>
-                        </div>
-                    </form>
+                                <input type="submit"
+                                       id="edit-registration"
+                                       name="registration"
+                                       value="Отправить заявку"
+                                       class="form-registration">
+                                <div class="form-dont-pass"><a class="form-dont-pass-action" href="#"><dfn>Забыли пароль?</dfn></a></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

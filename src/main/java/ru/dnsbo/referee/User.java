@@ -1,16 +1,16 @@
 package ru.dnsbo.referee;
 
-public class Referee{
+public class User {
     private Integer id;
     private String secondName;
     private String firstName;
     private String email;
     private String password;
 
-    public Referee() {
+    public User() {
     }
 
-    public Referee(String secondName, String firstName, String email, String password) {
+    public User(String secondName, String firstName, String email, String password) {
         this.secondName = secondName;
         this.firstName = firstName;
         this.email = email;

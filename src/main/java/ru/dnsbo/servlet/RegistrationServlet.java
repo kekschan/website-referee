@@ -1,10 +1,11 @@
+package ru.dnsbo.servlet;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "RegistrationServlet", value = "/RegistrationServlet")
+@WebServlet("/registration")
 public class RegistrationServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
