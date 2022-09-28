@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="referee-hibernate:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>referee-hibernate</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="referee-hibernate-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="referee-hibernate:war exploded" />
+    </root>
+  </artifact>
+</component>
