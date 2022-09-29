@@ -21,9 +21,9 @@ div {
     position: relative;
     margin: 0 auto;
     /*  background: #d2e2fd;*/
-    background: rgb(0,131,255);
-    background: linear-gradient(0deg, rgba(0,131,255,1) 0%, rgba(3,156,252,0.96) 25%,
-    rgba(7,178,253,0.93) 50%, rgba(14,206,250,0.87) 75%, rgba(10,225,249,0.82) 100%);
+    /*background: url("../img/main.png");*/
+    background-image: linear-gradient(to right top,
+    #eba8ff, #d6a9ff, #c1aafd, #adaaf8, #9baaf2, #91abf1, #87acf0, #7eadee, #77b0f3, #70b4f7, #67b7fb, #5dbbff);
     width: 1150px;
     min-height: 100%;
     box-shadow: 0 0 15px;

@@ -1,20 +1,36 @@
-package ru.dnsbo.referee;
+package ru.dnsbo.models;
 
-public class User {
+public class Referee {
     private Integer id;
     private String secondName;
     private String firstName;
     private String email;
     private String password;
 
-    public User() {
+    public Referee() {
     }
 
-    public User(String secondName, String firstName, String email, String password) {
+    public Referee(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+    public Referee(String secondName, String firstName, String email, String password) {
         this.secondName = secondName;
         this.firstName = firstName;
         this.email = email;
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Referee{" +
+                "id=" + id +
+                ", secondName='" + secondName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     public Integer getId() {

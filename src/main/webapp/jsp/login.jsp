@@ -10,6 +10,7 @@
 <head>
     <title>Московская Федерация Судей</title>
     <link href="${pageContext.request.contextPath}/css/styleLogin.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Cache-Control" content="private">
 </head>
 <body class="html front not-logged-in no-sidebars page-not">
 <div class="page-wrapper">
@@ -90,7 +91,7 @@
                                 </div>
                                 <div class="login-pass">
                                     <label for="edit-pass">
-                                        <input type="password" id="edit-pass" name="email" value="" size="60"
+                                        <input type="password" id="edit-pass" name="password" value="" size="60"
                                                maxlength="60"
                                                placeholder="Введите свой пароль" class="form-text-required">
                                     </label>
@@ -99,15 +100,15 @@
                                        id="edit-submit"
                                        name="op" value="Войти"
                                        class="form-submit">
-
-                                <input type="submit"
-                                       id="edit-registration"
-                                       name="registration"
-                                       value="Отправить заявку"
-                                       class="form-registration">
-                                <div class="form-dont-pass"><a class="form-dont-pass-action" href="#"><dfn>Забыли пароль?</dfn></a></div>
                             </div>
                         </form>
+                        <input type="submit"
+                               id="edit-registration"
+                               name="registration"
+                               value="Отправить заявку"
+                               class="form-registration">
+                        <div class="form-dont-pass"><a class="form-dont-pass-action" href="#"><dfn>Забыли пароль?</dfn></a>
+                        </div>
                     </div>
                 </div>
             </div>

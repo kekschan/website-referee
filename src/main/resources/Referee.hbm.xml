@@ -4,13 +4,14 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name = "ru.dnsbo.referee.User" table = "referee">
+    <class name = "ru.dnsbo.models.Referee" table = "referee">
         <id name = "id" type = "java.lang.Integer" column = "id">
             <generator class="identity"/>
         </id>
 
         <property name = "secondName" column = "secondname"/>
         <property name = "firstName" column = "firstname"/>
-        <property name="email" column="emailregistration"/>
+        <property name="email" column="email"/>
+        <property name="password" column="pass"/>
     </class>
 </hibernate-mapping>
