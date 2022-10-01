@@ -102,12 +102,11 @@
                                        class="form-submit">
                             </div>
                         </form>
-                        <input type="submit"
-                               id="edit-registration"
-                               name="registration"
-                               value="Отправить заявку"
-                               class="form-registration">
-                        <div class="form-dont-pass"><a class="form-dont-pass-action" href="#"><dfn>Забыли пароль?</dfn></a>
+                        <div class="form-registration">
+                            <div class="test"><a class="form-registration-action" href="${pageContext.request.contextPath}/jsp/registration.jsp">Отправить заявку</a></div>
+                        </div>
+                        <div class="form-dont-pass"><a class="form-dont-pass-action"
+                                                       href="#"><dfn>Забыли пароль?</dfn></a>
                         </div>
                     </div>
                 </div>

@@ -18,14 +18,13 @@ import java.util.Properties;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-
     Properties properties = new Properties();
     Configuration configuration = new Configuration();
     private Connection connection;
     @Override
     public void init() throws ServletException {
 
-        try {
+  /*      try {
             properties.load(Files.newInputStream(Paths.get(getServletContext().getRealPath("/WEB-INF/classes/db.properties"))));
             String dbUrl = properties.getProperty("db.url");
             String dbUser = properties.getProperty("db.username");
@@ -45,7 +44,7 @@ public class LoginServlet extends HttpServlet {
 
         } catch (IOException | ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
 
     @Override
@@ -55,30 +54,19 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
+      /*  SessionFactory sessionFactory = configuration.buildSessionFactory();
+        Session session = sessionFactory.openSession();*/
 
-        String Email = request.getParameter("email");
+       /* String Email = request.getParameter("email");
         String Password = request.getParameter("password");
 
-        PreparedStatement preparedStatement;
-        ResultSet resultSet;
-        String SQL_SELECT_BY_ID = "SELECT * FROM referee ";
-        try {
-            preparedStatement = connection.prepareStatement(SQL_SELECT_BY_ID);
-            resultSet = preparedStatement.executeQuery();
-            int i = 1;
-            //сделать цикл через referee.id
-            while (resultSet.next()){
-                Referee referee = session.createQuery("from Referee referee where referee.id = " + i, Referee.class).getSingleResult();
-                if(referee.getEmail().equals(Email)&referee.getPassword().equals(Password)){
-                    request.getServletContext().getRequestDispatcher("/jsp/profile.jsp").forward(request, response);
-                }
-                i++;
+        for (int i = 1; i < 10; ) {
+            Referee referee = session.createQuery("from Referee referee where referee.id = " + i, Referee.class).getSingleResult();
+            if (referee.getEmail().equals(Email) & referee.getPassword().equals(Password)) {
+                request.getServletContext().getRequestDispatcher("/jsp/profile.jsp").forward(request, response);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+
         }
-        request.getServletContext().getRequestDispatcher("/jsp/login.jsp").forward(request,response);
+        request.getServletContext().getRequestDispatcher("/jsp/login.jsp").forward(request, response);*/
     }
 }
