@@ -81,16 +81,16 @@
                         <form action="${pageContext.request.contextPath}/registration" method="post" id="user-login"
                               accept-charset="UTF-8">
                             <div class="sign-in">
-                                <div class="login-secondname">
-                                    <label for="edit-secondname">
-                                        <input type="text" id="edit-secondname" name="secondname" value="" size="60"
+                                <div class="login-secondName">
+                                    <label for="edit-secondName">
+                                        <input type="text" id="edit-secondName" name="secondName" value="" size="60"
                                                maxlength="60"
                                                placeholder="Введите фамилию" class="form-text-required">
                                     </label>
                                 </div>
-                                <div class="login-name">
-                                    <label for="edit-name">
-                                        <input type="text" id="edit-name" name="name" value="" size="60"
+                                <div class="login-firstName">
+                                    <label for="edit-firstName">
+                                        <input type="text" id="edit-firstName" name="firstName" value="" size="60"
                                                maxlength="60"
                                                placeholder="Введите имя" class="form-text-required">
                                     </label>
